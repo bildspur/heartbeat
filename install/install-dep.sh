@@ -14,3 +14,6 @@ sudo echo "@/home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autosta
 
 # increase video memory
 /bin/cp -rf system/config.txt /boot/config.txt
+
+# set wallpaper
+display -window root /home/pi/heartbeat-master/images/wallpaper.png
