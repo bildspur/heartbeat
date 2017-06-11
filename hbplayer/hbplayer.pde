@@ -1,16 +1,15 @@
-import processing.video.*;
-
+import gohai.glvideo.*;
 import oscP5.*;
 import netP5.*;
 
-Movie video;
+GLMovie video;
 OscP5 oscP5;
 
 void setup()
 {
   size(640, 480, P2D);
 
-  video = new Movie(this, "pablonouvelle.mp4");
+  video = new GLMovie(this, "pablonouvelle.mp4");
 
   setupOSC();
   setupZeroConf();
