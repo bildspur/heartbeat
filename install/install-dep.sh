@@ -10,4 +10,7 @@ sudo chmod +x /home/pi/heartbeat-master/run.sh
 sudo echo "@/home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autostart
 
 # change screen config (no sleep)
-/bin/cp -rf screen/lightdm.conf /etc/lightdm/lightdm.conf
+/bin/cp -rf system/lightdm.conf /etc/lightdm/lightdm.conf
+
+# increase video memory
+/bin/cp -rf system/config.txt /boot/config.txt
