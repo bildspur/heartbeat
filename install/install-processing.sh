@@ -5,6 +5,12 @@ cd /home/pi/heartbeat-master/install
 curl https://processing.org/download/install-arm.sh | sudo sh
 
 # install processing libraries
+mkdir /home/pi/sketchbook
+mkdir /home/pi/sketchbook/libraries
+mkdir /home/pi/sketchbook/examples
+mkdir /home/pi/sketchbook/modes
+mkdir /home/pi/sketchbook/templates
+mkdir /home/pi/sketchbook/tools
 
 # video gstreamer 0.1
 wget -qO- https://github.com/processing/processing-video/releases/download/latest/video.zip | jar xvf /dev/stdin | mv video /home/pi/sketchbook/libraries
