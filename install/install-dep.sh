@@ -7,7 +7,7 @@ sudo apt-get install --yes gstreamer1.0-omx
 
 # add autorun
 sudo chmod +x /home/pi/heartbeat-master/run.sh
-sudo echo "@/home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autostart
+sudo echo "@sh /home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autostart
 
 # change screen config (no sleep)
 /bin/cp -rf system/lightdm.conf /etc/lightdm/lightdm.conf
