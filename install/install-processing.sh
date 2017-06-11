@@ -18,7 +18,7 @@ sudo mv video /home/pi/sketchbook/libraries
 
 # glvideo gstreamer 1.0
 wget -qO- https://github.com/gohai/processing-glvideo/releases/download/latest/processing-glvideo.zip | jar xvf /dev/stdin
-sudo mv processing-glvideo /home/pi/sketchbook/libraries
+sudo mv glvideo /home/pi/sketchbook/libraries
 
 # oscP5
 wget -qO- https://github.com/sojamo/oscp5/releases/download/v2.0.4/oscP5-2.0.4.zip | jar xvf /dev/stdin
