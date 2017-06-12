@@ -9,7 +9,7 @@ void setup()
 {
   size(640, 480, P2D);
 
-  video = new GLMovie(this, "pablonouvelle.mp4");
+  video = new GLMovie(this, "pablonouvelle.mp4", GLVideo.MUTE);
 
   setupOSC();
   setupZeroConf();
