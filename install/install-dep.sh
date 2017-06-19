@@ -8,14 +8,8 @@ sudo apt-get install --yes gstreamer1.0-omx
 # add autorun
 sudo chmod +x /home/pi/heartbeat-master/run.sh
 
-# sudo echo "@sh /home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autostart
-/bin/cp -rf system/autostart /home/pi/.config/lxsession/LXDE-pi/autostart
-
 # change screen config (no sleep)
 /bin/cp -rf system/lightdm.conf /etc/lightdm/lightdm.conf
 
 # increase video memory
 /bin/cp -rf system/config.txt /boot/config.txt
-
-# set wallpaper
-/bin/cp -rf system/desktop-items-0.conf /home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
