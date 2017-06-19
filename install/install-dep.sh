@@ -16,4 +16,4 @@ sudo echo "@sh /home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/auto
 /bin/cp -rf system/config.txt /boot/config.txt
 
 # set wallpaper
-display -window root /home/pi/heartbeat-master/images/wallpaper.png
+/bin/cp -rf system/desktop-items-0.conf /home/pi/.config/pcmanfm/LXDE-pi/desktop-items-0.conf
