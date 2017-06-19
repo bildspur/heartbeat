@@ -10,12 +10,6 @@ void setupJMDNS()
 
     // Add a service listener
     jmdns.addServiceListener("_osc._udp.local.", new SampleListener());
-
-    println("Clients: ");
-    for (ServiceInfo s : jmdns.list("_osc._udp.local."))
-    {
-      println(s.getName());
-    }
   } 
   catch (UnknownHostException e) {
     System.out.println(e.getMessage());
@@ -42,12 +36,13 @@ class SampleListener implements ServiceListener {
 
   @Override
     public void serviceResolved(ServiceEvent event) {
-    System.out.println("Service resolved: " + event.getInfo());
+    //System.out.println("Service resolved: " + event.getInfo());
 
     ServiceInfo info = event.getInfo();
     if (info.getName().startsWith("HeartbeatPi"))
     {
       heartbeatDevice = info;
+      play();
     }
   }
 }

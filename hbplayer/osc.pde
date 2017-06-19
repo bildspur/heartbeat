@@ -10,7 +10,7 @@ void oscEvent(OscMessage msg) {
 
   case "/heartbeat/play":
     hasBeenPlayed = true;
-    video.play();
+    video.loop();
     break;
 
   case "/heartbeat/pause":
