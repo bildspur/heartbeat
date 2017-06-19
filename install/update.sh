@@ -1,7 +1,12 @@
 #!/bin/bash
 
 # create update folder
-rm -r /home/pi/update; mkdir /home/pi/update
+if [ -d /home/pi/update ]
+	  then
+    echo "udpate folder exists."
+    rm -r /home/pi/update
+fi
+mkdir /home/pi/update
 
 # change to this folder
 cd /home/pi/update
