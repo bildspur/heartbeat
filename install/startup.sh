@@ -10,7 +10,7 @@ cd /home/pi/heartbeat-master/install
 cd /home/pi/heartbeat-master
 
 # update
-# sh ./update.sh
+sudo bash update.sh
 
 # make it user changeable
 sudo chmod -R 777 /home/pi/heartbeat-master

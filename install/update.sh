@@ -16,4 +16,9 @@ fi
 
 # download last files from github
 wget -qO- https://github.com/bildspur/heartbeat/archive/master.zip | jar xvf /dev/stdin
-sudo rm -r /home/pi/heartbeat-master; sudo mv heartbeat-master /home/pi/heartbeat-master
+
+if [ -d ./heartbeat-master ]
+  then
+    echo "master downloaded, now replacing files..."
+    sudo rm -r /home/pi/heartbeat-master; sudo mv heartbeat-master /home/pi/heartbeat-master
+fi
