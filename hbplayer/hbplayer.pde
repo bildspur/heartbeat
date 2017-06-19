@@ -12,10 +12,16 @@ void setup()
   //size(640, 480, P2D);
   fullScreen(P2D);
 
+  textSize(30);
+  textAlign(CENTER, CENTER);
+  text("HeartbeatPi\nloading...", width/2, height/2);
+
   video = new GLMovie(this, "pablonouvelle.mp4", GLVideo.MUTE);
 
   setupOSC();
   setupZeroConf();
+
+  noCursor();
 }
 
 void draw()
