@@ -7,6 +7,9 @@ cd /home/pi/heartbeat-master/install
 # sudo echo "@sh /home/pi/heartbeat-master/run.sh" >> /etc/xdg/lxsession/LXDE/autostart
 /bin/cp -rf system/autostart /home/pi/.config/lxsession/LXDE-pi/autostart
 
+# setting panel settings
+/bin/cp -rf system/panel /home/pi/.config/lxpanel/LXDE-pi/panels/panel
+
 # update
 sudo bash update.sh
 
