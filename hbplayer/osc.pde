@@ -9,6 +9,7 @@ void oscEvent(OscMessage msg) {
   switch (msg.addrPattern()) {
 
   case "/heartbeat/play":
+    hasBeenPlayed = true;
     video.play();
     break;
 

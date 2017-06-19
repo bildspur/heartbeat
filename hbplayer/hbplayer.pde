@@ -5,6 +5,8 @@ import netP5.*;
 GLMovie video;
 OscP5 oscP5;
 
+boolean hasBeenPlayed = false;
+
 void setup()
 {
   //size(640, 480, P2D);
@@ -23,7 +25,7 @@ void draw()
 
   if (!video.playing())
   {
-    if (address != null)
+    if (!hasBeenPlayed && address != null)
     {
       textSize(30);
       textAlign(CENTER, CENTER);

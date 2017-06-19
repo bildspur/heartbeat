@@ -10,7 +10,7 @@ void setupZeroConf()
 {
   try {
     PApplet.print("setting up zero conf...");
-    address = InetAddress.getLocalHost();
+    address = getLocalHostLANAddress(); //InetAddress.getLocalHost();
     jmdns = JmDNS.create(address);
     jmdns.registerService(ServiceInfo.create("_osc._udp.", "HeartbeatPi", OSC_PORT, ""));
     PApplet.println("done!");
